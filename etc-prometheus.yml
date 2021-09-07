@@ -1,0 +1,12 @@
+global:
+  scrape_interval:     30s
+  evaluation_interval: 30s
+
+scrape_configs:
+  - job_name: 'local-prometheus'
+    static_configs:
+    - targets: ['localhost:9091']
+  
+  - job_name: 'local-piserver'
+    static_configs:
+    - targets: ['192.168.0.114:9100']
