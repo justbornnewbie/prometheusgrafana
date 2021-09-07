@@ -1,4 +1,4 @@
-def git_url = 'https://github.com/rjmsas/prometheus.git'
+def git_url = 'https://github.com/rjmsas/prometheusgrafana.git'
 def git_branch = 'main'
 
 pipeline
@@ -16,7 +16,7 @@ pipeline
             steps{
                    sh '''
                    mkdir -p /opt/docker/prometheus /opt/docker/prometheus/conf
-                   cp prometheus/etc-prometheus.yml /opt/docker/prometheus/conf/prometheus.yml
+                   cp etc-prometheus.yml /opt/docker/prometheus/conf/prometheus.yml
                    chmod -R 777 /opt/docker/prometheus/
                    '''
                }
