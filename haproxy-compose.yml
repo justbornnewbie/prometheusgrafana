@@ -1,0 +1,9 @@
+version: '3'
+services:
+  haproxy:
+    container_name: haproxy
+    image: haproxy
+    ports:
+     - "80:80"
+    volumes:
+     - "/opt/docker/haproxy:/usr/local/etc/haproxy"
