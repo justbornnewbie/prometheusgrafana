@@ -3,6 +3,7 @@ services:
   haproxy:
     container_name: haproxy
     image: haproxy
+    user: root
     ports:
      - "80:80"
     volumes:

@@ -9,4 +9,4 @@ scrape_configs:
   
   - job_name: 'prodserver'
     static_configs:
-    - targets: ['194.135.93.16:9100']
+    - targets: ['194.135.93.16:9091']
